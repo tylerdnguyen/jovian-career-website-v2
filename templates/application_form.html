@@ -1,3 +1,4 @@
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 <h4>Application Form</h4>
 <form action="/job/{{job['id']}}/apply" method="post">
   <div class="mb-2">
@@ -28,5 +29,6 @@
     <label for="resume_url">Resume URL:</label><br>
     <input type="text" name="resume_url" placeholder="Your Resume">
   </div>
+  <div class="h-captcha" data-sitekey="744528b2-f422-4388-9dda-b2ae23243fb7"></div>
   <input type="submit" name="submit">
 </form>
